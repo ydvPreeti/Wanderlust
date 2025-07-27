@@ -4,7 +4,7 @@
   },
   "name": "majorproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web service deployed on render",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
