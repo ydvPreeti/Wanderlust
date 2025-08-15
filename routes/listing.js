@@ -27,6 +27,7 @@ router.route("/:id")
     .delete(isLoggedIn, isOwner, wrapAsync( listingController.destroyListing));
 
 
+
 //Index Route
 // router.get("/",wrapAsync(listingController.index));
 
