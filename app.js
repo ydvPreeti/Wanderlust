@@ -105,7 +105,7 @@ app.use((req,res,next)=>{
 
 app.use("/", listingRouter);
 // app.use("/listings", listingRouter);
-app.use("/:id/reviews", reviewRouter);
+app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
 // app.get("/testListing", async (req, res) => {
