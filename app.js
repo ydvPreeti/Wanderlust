@@ -120,9 +120,9 @@ app.use("/", userRouter);
 //   res.send("successful testing");
 // });
 
-app.all("*",(req, res, next)=>{
-  next(new expressError(404,"page not found!"));
-});
+// app.all("*",(req, res, next)=>{
+//   next(new expressError(404,"page not found!"));
+// });
 
 app.use((err, req, res, next)=>{
   let {status = 500, message = "something went wrong"} = err;
