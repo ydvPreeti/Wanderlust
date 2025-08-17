@@ -124,7 +124,7 @@ app.use("/", userRouter);
 
 
 app.get('/', (req, res) => {
-  res.redirect('/listing');
+  res.redirect('/listings');
 });
 
 app.all("*",(req, res, next)=>{
