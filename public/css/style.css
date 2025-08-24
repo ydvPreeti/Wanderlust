@@ -115,3 +115,9 @@ body{
     background-color: #fe424d !important;
     border: none !important;
 }
+
+/* home page */
+.image{
+    /* height: 900px; */
+    width: 100%;
+}

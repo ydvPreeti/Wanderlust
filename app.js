@@ -122,9 +122,8 @@ app.use("/", userRouter);
 //   res.send("successful testing");
 // });
 
-
-app.get('/', (req, res) => {
-  res.redirect('/listings');
+app.get("/", async (req, res, next)=>{
+  res.render("listings/home.ejs");
 });
 
 app.all("*",(req, res, next)=>{
