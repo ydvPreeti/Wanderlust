@@ -1,4 +1,74 @@
 <% layout("/layouts/boilerplate")%>
+<style>
+    header {
+    text-align: center;
+    padding: 40px 20px;
+    /* background: #ffffff; */
+  }
+
+  header h1 {
+    font-size: 5.5rem;
+    color: maroon;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+ .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+    }
+
+    .content > div {
+      flex: 1;
+    }
+  }
+
+  .card {
+    background: #fff;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #555;
+  }
+</style>
+
+    <header>
+        <h1>Wanderlust</h1>
+        <p>Explore the world with us</p>
+    </header>
     <div>
         <img class="image" src="wanderlust.png" alt="home image">
     </div>
+     <div class="content">
+    <div class="card">
+      <h2>Discover Places</h2>
+      <p>Uncover hidden gems, local favorites, and off-the-beaten-path adventures around the globe.</p>
+    </div>
+    <div class="card">
+      <h2>Plan Your Trip</h2>
+      <p>Use our smart tools to plan, budget, and organize your dream vacation in minutes.</p>
+    </div>
+    <div class="card">
+      <h2>Share Experiences</h2>
+      <p>Join our travel community to share your stories, tips, and travel hacks with others.</p>
+    </div>
+  </div>
