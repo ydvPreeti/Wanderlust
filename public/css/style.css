@@ -114,6 +114,7 @@ body{
 .dlt-btn{
     background-color: #fe424d !important;
     border: none !important;
+    padding-left: 20px;
 }
 
 /* home page */
